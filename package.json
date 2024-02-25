@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "nuxt": "^3.10.1",
-    "nuxt-mdi": "^1.1.6",
+    "nuxt-icon": "^0.6.8",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   }

@@ -51,6 +51,8 @@ a:checked {
 html {
 	font-size: 1.2em;
 	scroll-behavior: smooth;
+	scrollbar-color: var(--accent) var(--bg-75);
+	scrollbar-width: thin;
 }
 
 :root {
