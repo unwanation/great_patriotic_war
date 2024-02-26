@@ -8,6 +8,7 @@ defineProps(['content']);
 			<div class="content">
 				<span class="name">{{ content?.name }}</span>
 				<span class="date">{{ content?.date }}</span>
+				<p>{{ content?.desc }}</p>
 			</div>
 			<div
 				class="portrait"
@@ -52,7 +53,7 @@ defineProps(['content']);
 
 .modal {
 	display: flex;
-	width: 50%;
+	width: 70%;
 	height: 80%;
 	border-radius: 12px;
 	box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
@@ -63,7 +64,7 @@ defineProps(['content']);
 
 .content {
 	padding: 2rem;
-	width: 70%;
+	width: 105%;
 }
 
 .name {
