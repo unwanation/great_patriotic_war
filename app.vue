@@ -1,4 +1,5 @@
 <template>
+	<Title>Великая Отечественная Война</Title>
 	<div class="container">
 		<Sidebar />
 		<main class="main">
