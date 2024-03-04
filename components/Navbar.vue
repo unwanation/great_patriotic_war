@@ -33,4 +33,10 @@ const handleClick = event => {
 	position: relative;
 	z-index: 2;
 }
+
+@media screen and (max-width: 1210px) {
+	.nav {
+		display: flex;
+	}
+}
 </style>

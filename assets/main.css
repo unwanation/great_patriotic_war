@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 *,
 *::before,
 *::after {
@@ -55,22 +52,8 @@ html {
 	scrollbar-width: thin;
 }
 
-:root {
-	--bg: #f0f3f6;
-	--alt: white;
-	--bg-75: hsla(277, 57%, 95%, 0.75);
-	--text: #333333;
-	--secondary: #7d8795;
-	--accent: hsl(340, 75%, 49%);
-	--accented: hsl(340, 100%, 97%);
-	--good: hsl(146, 100%, 66%);
-	--bad: hsl(0, 100%, 65%);
-	--warn: hsl(44, 80%, 55%);
-	--mw: 1220px;
-}
-
 body {
-	font-family: 'Inter', 'Geologica', sans-serif;
+	font-family: 'Inter', sans-serif;
 	color: var(--text);
 	background-color: var(--bg);
 }
@@ -88,12 +71,3 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
-/* @media (prefers-color-scheme: dark) {
-	:root {
-		--bg: black;
-		--bg-75: hsla(0, 0%, 0%, 0.75);
-		--alt: hsl(0, 0%, 16%);
-		--text: hsl(275, 50%, 95%);
-	}
-} */

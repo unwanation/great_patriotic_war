@@ -42,7 +42,7 @@ defineProps(['content']);
 }
 
 .modal {
-	max-height: 100%;
+	max-height: 98%;
 	border-radius: 12px;
 	box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
 	background-color: var(--alt);

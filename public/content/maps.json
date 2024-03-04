@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Первый этап",
+		"map": "/maps/first.jpg"
+	},
+	{
+		"name": "Московская битва",
+		"map": "/maps/moscow.jpg"
+	},
+	{
+		"name": "Блокада Ленинграда",
+		"map": "/maps/leningrad.jpg"
+	},
+	{
+		"name": "Сталинградская битва",
+		"map": "/maps/stalingrad.jpg"
+	},
+	{
+		"name": "Коренной перелом",
+		"map": "/maps/break.jpg"
+	},
+	{
+		"name": "10 сталинских ударов",
+		"map": "/maps/10stalin.jpg"
+	},
+	{
+		"name": "Ясско-Кишиневская операция",
+		"map": "/maps/kishinev.png"
+	},
+	{
+		"name": "Восточно-карпатская операция",
+		"map": "/maps/westcarpat.png"
+	},
+	{
+		"name": "Тихоокеанский фронт",
+		"map": "/maps/pacific.jpg"
+	},
+	{
+		"name": "Висло-Одерская операция",
+		"map": "/maps/oder.jpg"
+	},
+	{
+		"name": "Берлинская операция",
+		"map": "/maps/berlin.jpg"
+	},
+	{
+		"name": "Штурм Берлина",
+		"map": "/maps/endsieg.jpg"
+	}
+]

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="js">
 const modal = ref(null);
 
 const showModal = m => {
@@ -12,30 +12,21 @@ const hideModal = event => {
 </script>
 
 <template>
-	<div class="container">
-		<div class="maps">
-			<Map
-				@click="showModal(map)"
-				v-for="(map, i) in maps"
-				:key="i"
-				:map-name="map.name"
-				:map="map.map"
-			/>
-		</div>
+	<div class="maps">
+		<Map
+			@click="showModal(map)"
+			v-for="(map, i) in data.maps"
+			:key="i"
+			:map="{ ...map, idx: i }"
+		/>
 	</div>
 	<MapModal @click="hideModal" v-show="modal" :content="modal" />
 </template>
 
-<style scoped>
-.container {
-	display: flex;
-	gap: 1.3rem;
-}
-
+<style lang="scss">
 .maps {
-	width: 100%;
 	display: flex;
 	flex-flow: wrap;
-	gap: 2rem;
+	gap: 1.5rem;
 }
 </style>
