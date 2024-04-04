@@ -44,6 +44,7 @@ defineProps<{
 	background-position-x: left;
 	background-repeat: no-repeat;
 	background-size: 25%;
+	background-size: 25% auto;
 	background-position-y: center;
 	border-radius: 12px;
 	padding: 2rem;

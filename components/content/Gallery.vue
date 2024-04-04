@@ -1,61 +1,61 @@
 <script setup>
-const currentSlide = ref(0);
+const currentSlide = ref(1);
 </script>
 
 <template>
 	<div class="gallery">
-		<Carousel
-			id="gallery"
-			:items-to-show="1"
-			:wrap-around="false"
-			v-model="currentSlide"
+		<button
+			v-show="currentSlide > 1"
+			class="button"
+			@click="currentSlide--"
 		>
-			<Slide v-for="slide in 26" :key="slide">
-				<div class="carousel__item">
-					<img
-						:src="`/gallery/(${slide}).jpg`"
-						alt=""
-						class="photo"
-					/>
-				</div>
-			</Slide>
-		</Carousel>
-
-		<Carousel
-			id="thumbnails"
-			:items-to-show="4"
-			:wrap-around="true"
-			v-model="currentSlide"
-			ref="carousel"
+			<Icon name="material-symbols:arrow-back-rounded" />
+		</button>
+		<img :src="`/gallery/${currentSlide}.jpg`" alt="" class="photo" />
+		<button
+			v-show="currentSlide < 26"
+			class="button"
+			@click="currentSlide++"
 		>
-			<Slide v-for="slide in 10" :key="slide">
-				<div class="carousel__item" @click="currentSlide = slide - 1">
-					<img
-						:src="`/gallery/(${slide}).jpg`"
-						alt=""
-						class="miniphoto"
-					/>
-				</div>
-			</Slide>
-		</Carousel>
+			<Icon name="material-symbols:arrow-forward-rounded" />
+		</button>
 	</div>
 </template>
 
 <style lang="scss">
 .gallery {
-	max-width: 153vh;
-	background-color: black;
-}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
 
-.photo {
-	width: 38vw;
-}
+	.photo {
+		display: block;
+		width: 75%;
+		height: 90%;
+		object-fit: cover;
+		border-radius: 18px;
+		z-index: 1;
+		transition: all 0.5s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
 
-.miniphoto {
-	width: 80%;
-	transition: transform 0.5s;
-	&:hover {
-		transform: scale(1.1);
+	.button {
+		background-color: var(--alt);
+		color: var(--text);
+		padding-bottom: 0.5rem;
+		margin: 1.75rem;
+		font-size: 2.5rem;
+		border: none;
+		border-radius: 17px;
+		cursor: pointer;
+		transition: all 0.5s;
+		&:hover {
+			transform: scale(1.1);
+			color: var(--accent);
+		}
 	}
 }
 </style>

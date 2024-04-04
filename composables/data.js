@@ -5,15 +5,15 @@ export const tabs = [
 	},
 	{
 		label: 'Карты',
-		image: '',
+		image: '/maps/endsieg.jpg',
 	},
 	{
 		label: 'Оружие Победы',
-		image: '',
+		image: 'https://as2.ftcdn.net/v2/jpg/01/44/75/49/1000_F_144754982_c781mdMu0NxWrZDQqlwCIoL2Nv0OKynm.jpg',
 	},
 	{
 		label: 'Галерея Войны',
-		image: '',
+		image: '/gallery/15.jpg',
 	},
 ];
 

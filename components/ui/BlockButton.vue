@@ -49,14 +49,21 @@ defineProps<{
 	&:focus {
 		filter: none;
 	}
+
+	&:nth-child(3),
+	&:nth-child(4) {
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+	}
 }
 
 .block-button.alt {
-	background: var(--accented);
+	background-color: var(--accented);
 	color: var(--accent);
 
 	&:nth-child(odd) {
-		background: var(--accent);
+		background-color: var(--accent);
 		color: var(--accented);
 	}
 }

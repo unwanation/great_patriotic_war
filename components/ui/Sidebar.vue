@@ -1,9 +1,4 @@
-<script setup lang="ts">
-defineProps<{
-	content: { name: string }[];
-	prefix: string;
-}>();
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<aside class="sidebar">
@@ -11,13 +6,11 @@ defineProps<{
 			<Icon name="material-symbols:arrow-back-rounded" />
 			вернуться
 		</a>
-		<h1 class="title">{{ tabs[store.currentTab() - 1].label }}</h1>
 		<div class="elements">
-			<SidebarElement
-				v-for="(e, i) in content"
-				:href="`#${prefix}-${i}`"
-				:label="e.name"
-			/>
+			<SidebarElement :tab="1" label="Полководцы" />
+			<SidebarElement :tab="2" label="Карты" />
+			<SidebarElement :tab="3" label="Оружие победы" />
+			<SidebarElement :tab="4" label="Галерея войны" />
 		</div>
 	</aside>
 </template>
@@ -45,7 +38,6 @@ defineProps<{
 	.return {
 		color: var(--secondary);
 		transition: all 0.5s;
-
 		&:hover {
 			filter: brightness(1.4);
 			cursor: pointer;
@@ -55,8 +47,9 @@ defineProps<{
 			filter: brightness(1.4);
 		}
 	}
-	.title {
-		margin: 0.5rem 0;
+
+	.elements {
+		margin-top: 1.5rem;
 	}
 }
 </style>
