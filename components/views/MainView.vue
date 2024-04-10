@@ -5,7 +5,9 @@
 			:key="i"
 			@click="store.setCurrentTab(i + 1)"
 			:block="tab"
-			:style="`animation: fade-in ${0.3 * (i + 1)}s ease;`"
+			:style="{
+				animation: `fade-in ${0.3 * (i + 1)}s ease`,
+			}"
 		/>
 	</div>
 </template>
@@ -21,11 +23,20 @@
 		transform: none;
 	}
 }
-
 .blocks {
+	padding: 2%;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+	grid-auto-flow: dense;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+
+	:first-child {
+		grid-column: 1 / 3;
+		grid-row: 1 / 3;
+	}
 }
 </style>

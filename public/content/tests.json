@@ -1,0 +1,48 @@
+[
+	{
+		"name": "Московская битва",
+		"questions": [
+			{
+				"question": "Когда произошла Московская битва?",
+				"type": "radio",
+				"answers": [
+					{
+						"answer": "30 сентября 1941 - 20 апреля 1942",
+						"correct": true
+					},
+					{
+						"answer": "5-6 декабря 1941",
+						"correct": false
+					},
+					{
+						"answer": "12 мая 1942",
+						"correct": false
+					}
+				]
+			},
+			{
+				"question": "Кто участвовал в обороне Москвы?",
+				"type": "checkbox",
+				"answers": [
+					{
+						"answer": "Рокоссовский",
+						"correct": true
+					},
+					{
+						"answer": "Говоров",
+						"correct": true
+					},
+					{
+						"answer": "Тухачевский",
+						"correct": false
+					}
+				]
+			},
+			{
+				"question": "Как называлась операция по захвату Москвы?",
+				"type": "text",
+				"answers": ["тайфун"]
+			}
+		]
+	}
+]

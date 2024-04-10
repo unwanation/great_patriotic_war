@@ -25,17 +25,21 @@ defineProps<{
 	font-size: 4rem;
 	text-align: end;
 	vertical-align: bottom;
-	width: 25%;
+	width: 100%;
 	height: 100%;
-	padding-top: 30%;
-	padding-right: 1%;
+	padding-top: 50%;
+	padding-right: 2%;
 	line-height: 80%;
 	color: var(--accented);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: multiply;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 	filter: grayscale(0.9);
 	border: none;
+	border-radius: 16px;
 	transition: all 0.5s ease-in-out;
 
 	&:hover {
@@ -48,13 +52,6 @@ defineProps<{
 	&:hover,
 	&:focus {
 		filter: none;
-	}
-
-	&:nth-child(3),
-	&:nth-child(4) {
-		background-position: center !important;
-		background-repeat: no-repeat !important;
-		background-size: cover !important;
 	}
 }
 
