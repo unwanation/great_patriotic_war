@@ -7,10 +7,12 @@
 			вернуться
 		</a>
 		<div class="elements">
-			<SidebarElement :tab="1" label="Полководцы" />
-			<SidebarElement :tab="2" label="Карты" />
-			<SidebarElement :tab="3" label="Оружие победы" />
-			<SidebarElement :tab="4" label="Галерея войны" />
+			<SidebarElement
+				v-for="(tab, i) in tabs"
+				:key="i"
+				:tab="i + 1"
+				:label="tab.label"
+			/>
 		</div>
 	</aside>
 </template>
