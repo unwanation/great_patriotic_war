@@ -24,5 +24,5 @@ export const data = reactive({
 	leaders: await $fetch('/content/leaders.json'),
 	maps: await $fetch('/content/maps.json'),
 	techs: await $fetch('/content/techs.json'),
-	techs: await $fetch('/content/tests.json'),
+	tests: await $fetch('/content/tests.json'),
 });
