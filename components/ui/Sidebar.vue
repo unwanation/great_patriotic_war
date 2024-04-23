@@ -12,6 +12,7 @@
 				:key="i"
 				:tab="i + 1"
 				:label="tab.label"
+				:subtabs="tab.subtabs"
 			/>
 		</div>
 	</aside>
@@ -52,6 +53,7 @@
 
 	.elements {
 		margin-top: 1.5rem;
+		margin-left: -3.5rem;
 	}
 }
 </style>

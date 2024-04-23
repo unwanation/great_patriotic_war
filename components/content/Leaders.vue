@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{
+	source: Array;
+}>();
+</script>
 
 <template>
 	<div class="leaders">
 		<Leader
-			v-for="(leader, i) in data.leaders"
+			v-for="(leader, i) in source"
 			:key="i"
 			:leader="{ ...leader, idx: i }"
 		/>

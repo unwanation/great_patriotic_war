@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Лев Михайлович Доватор",
+		"date": "(1903-1941)",
+		"portrait": "https://radiovera.ru/wp-content/uploads/2017/05/Marshal-ZHukov.jpg",
+		"desc": "Генерал-майор, Герой Советского Союза. ..."
+	},
+	{
+		"name": "Мелитон Варламович Кантария",
+		"date": "(1920-1993)",
+		"portrait": "https://warheroes.ru/content/images/heroes/2hero/Vasilevsky.jpg",
+		"desc": "Младший сержант РККА. ..."
+	},
+	{
+		"name": "Василий Григорьевич Зайцев",
+		"date": "(1915-1991)",
+		"portrait": "https://fessl.ru/resources/person/img/rokossowski/rokossowski_big.jpg",
+		"desc": "Снайпер 1047-го стрелкового полка. ..."
+	}
+]

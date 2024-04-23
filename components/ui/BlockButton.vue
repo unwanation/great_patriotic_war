@@ -23,13 +23,14 @@ defineProps<{
 	font-family: 'Bebas Neue', sans-serif;
 	font-weight: bold;
 	font-size: 4rem;
+	line-height: 80%;
 	text-align: end;
 	vertical-align: bottom;
+	word-wrap: break-word;
 	width: 100%;
 	height: 100%;
 	padding-top: 50%;
 	padding-right: 2%;
-	line-height: 80%;
 	color: var(--accented);
 	background-repeat: no-repeat;
 	background-size: cover;
