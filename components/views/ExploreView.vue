@@ -18,7 +18,12 @@
 		<Maps v-else-if="store.currentTab() == 2" />
 		<Techs v-else-if="store.currentTab() == 3" />
 		<Gallery v-else-if="store.currentTab() == 4" />
-		<Films v-else-if="store.currentTab() == 5" />
+		<Films
+			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 0"
+		/>
+		<Links
+			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 1"
+		/>
 	</div>
 </template>
 

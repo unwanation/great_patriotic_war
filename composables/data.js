@@ -20,9 +20,9 @@ export const tabs = [
 		subtabs: [],
 	},
 	{
-		label: 'Кинематограф',
+		label: 'Дополнительно',
 		image: '',
-		subtabs: [],
+		subtabs: ['Кинематограф', 'Полезные ссылки'],
 	},
 	// {
 	// label: 'Тесты',
@@ -39,4 +39,5 @@ export const data = reactive({
 	maps: await $fetch('/content/maps.json'),
 	techs: await $fetch('/content/techs.json'),
 	tests: await $fetch('/content/tests.json'),
+	links: await $fetch('/content/links.json'),
 });

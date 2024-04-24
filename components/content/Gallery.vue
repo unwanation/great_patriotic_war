@@ -23,11 +23,23 @@ const currentSlide = ref(1);
 </template>
 
 <style lang="scss">
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(10rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .gallery {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 90vh;
+	animation: fade-up 0.7s ease;
 
 	.photo {
 		display: block;

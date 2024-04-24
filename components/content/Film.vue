@@ -18,7 +18,7 @@ defineProps<{
 		<div class="img" :style="`background-image: url('${film.img}');`"></div>
 		<div class="content">
 			<h3 class="name">{{ film.name }}</h3>
-			<ul>
+			<ul class="info">
 				<li>автор плаката - {{ film.author }};</li>
 				<li>режиссёр - {{ film.producer }};</li>
 				<li>{{ film.remark }};</li>
@@ -58,6 +58,9 @@ defineProps<{
 	}
 	.content {
 		padding: 2rem;
+		.info {
+			margin-left: -1rem;
+		}
 	}
 }
 </style>
