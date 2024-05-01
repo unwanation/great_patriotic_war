@@ -13,11 +13,11 @@ defineProps<{
 </script>
 
 <template>
-	<div
-		class="leader"
-		:id="`leader-${leader.idx}`"
-		:style="`background-image: url('${leader.portrait}');`"
-	>
+	<div class="leader">
+		<img
+			class="portrait"
+			:src="leader.portrait"
+		></img>
 		<div class="content">
 			<h1 class="name">{{ leader.name }}</h1>
 			<span class="date">{{ leader.date }}</span>
@@ -39,6 +39,9 @@ defineProps<{
 }
 
 .leader {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	max-height: 90vh;
 	background-color: var(--alt);
 	background-position-x: left;
@@ -46,12 +49,17 @@ defineProps<{
 	background-size: 25%;
 	background-size: 25% auto;
 	background-position-y: center;
-	border-radius: 12px;
-	padding: 2rem;
+	border-radius: 16px;
+	padding: 1.5rem;
 	animation: fade-up 0.7s ease;
 
+	.portrait {
+		height: inherit;
+		max-width: 20%;
+		border-radius: 16px;
+		margin-right: 1.5rem;
+	}
 	.content {
-		margin-left: 25%;
 		.date {
 			font-weight: 500;
 		}
