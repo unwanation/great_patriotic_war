@@ -25,8 +25,9 @@ const hideModal = event => {
 
 <style lang="scss">
 .maps {
-	display: flex;
-	flex-flow: wrap;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 	gap: 1.5rem;
 }
 </style>

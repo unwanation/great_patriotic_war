@@ -1,7 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-	<Sidebar />
+	<Dock v-if="store.mobile()" />
+	<Sidebar v-else />
 	<div class="container">
 		<Leaders
 			:source="data.leaders"
@@ -21,8 +22,11 @@
 		<Films
 			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 0"
 		/>
-		<Links
+		<Terms
 			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 1"
+		/>
+		<Links
+			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 2"
 		/>
 	</div>
 </template>
@@ -31,5 +35,12 @@
 .container {
 	margin-left: 20%;
 	padding: 2%;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		margin: auto;
+		margin-bottom: 10%;
+	}
 }
 </style>

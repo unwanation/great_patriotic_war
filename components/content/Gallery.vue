@@ -78,4 +78,15 @@ const moveToNextSlide = () => {
 		}
 	}
 }
+
+@media screen and (max-width: 800px) {
+	.gallery {
+		.photo {
+			width: 80%;
+		}
+	}
+	.button {
+		opacity: 0;
+	}
+}
 </style>

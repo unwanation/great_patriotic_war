@@ -21,7 +21,6 @@ defineProps<{
 .map {
 	background-color: var(--alt);
 	border-radius: 16px;
-	width: 22%;
 	height: 20rem;
 	transition: transform 0.5s;
 	animation: fade-in 0.4s ease-in;

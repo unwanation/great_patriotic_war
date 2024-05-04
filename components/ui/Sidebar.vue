@@ -56,4 +56,10 @@
 		margin-left: -3.5rem;
 	}
 }
+
+@media screen and (max-width: 1100px) {
+	.sidebar {
+		display: none;
+	}
+}
 </style>

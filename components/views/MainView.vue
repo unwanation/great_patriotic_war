@@ -39,4 +39,20 @@
 		grid-row: 1 / 3;
 	}
 }
+
+@media (max-width: 1000px) {
+	.blocks {
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+	}
+}
+
+@media (max-width: 870px) {
+	.blocks {
+		display: block;
+
+		* {
+			margin-bottom: 1rem;
+		}
+	}
+}
 </style>

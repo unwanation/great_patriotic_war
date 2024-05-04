@@ -8,8 +8,9 @@
 
 <style lang="scss">
 .films {
-	display: flex;
-	flex-direction: row;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	gap: 1.5rem;
 }
 </style>

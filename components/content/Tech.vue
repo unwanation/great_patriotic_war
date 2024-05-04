@@ -34,7 +34,6 @@ defineProps<{
 }
 
 .tech {
-	max-height: 90vh;
 	background-color: var(--alt);
 	background-position-x: left;
 	background-repeat: no-repeat;

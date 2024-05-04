@@ -42,7 +42,6 @@ defineProps<{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	max-height: 90vh;
 	background-color: var(--alt);
 	background-position-x: left;
 	background-repeat: no-repeat;
@@ -62,6 +61,19 @@ defineProps<{
 	.content {
 		.date {
 			font-weight: 500;
+		}
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.leader {
+		flex-direction: column;
+		justify-content: center;
+
+
+		.portrait {
+			max-width: 45%;
+			margin-bottom: 1rem;
 		}
 	}
 }
