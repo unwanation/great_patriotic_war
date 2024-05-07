@@ -49,6 +49,15 @@ defineProps<{
 		margin-bottom: -1.25rem;
 		border-radius: 12px;
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.tech {
+		.photo {
+			width: 60%;
+		}
 	}
 }
 </style>

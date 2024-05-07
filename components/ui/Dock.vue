@@ -19,7 +19,8 @@
 	bottom: -2px;
 	width: 100%;
 	background-color: var(--accent);
-	background-color: transparent;
+	background-color: hsla(340, 75%, 49%, 0.35);
+	border-radius: 12px 12px 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;

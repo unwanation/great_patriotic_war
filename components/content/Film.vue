@@ -50,7 +50,7 @@ defineProps<{
 		background-position-x: center;
 		background-position-y: top;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 		border-radius: 12px;
 		width: 100%;
 		min-height: 20rem;

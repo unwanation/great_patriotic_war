@@ -25,8 +25,11 @@
 		<Terms
 			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 1"
 		/>
-		<Links
+		<Test
 			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 2"
+		/>
+		<Links
+			v-else-if="store.currentTab() == 5 && store.currentSubtab() == 3"
 		/>
 	</div>
 </template>
