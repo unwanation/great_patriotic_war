@@ -86,5 +86,13 @@
 		"remark": "советский художественный фильм",
 		"year": "1971",
 		"img": "/films/6.webp"
+	},
+	{
+		"name": "В бой идут одни \"старики\"",
+		"author": "Е. Гребенщиков",
+		"producer": "Л. Быков",
+		"remark": "советский художественный фильм",
+		"year": "1973",
+		"img": "https://upload.wikimedia.org/wikipedia/ru/f/f8/1974_v_boy_idut_odni_stariki.jpg"
 	}
 ]

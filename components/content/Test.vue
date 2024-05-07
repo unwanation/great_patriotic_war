@@ -119,7 +119,7 @@ const test = computed(() => {
 		margin: 1.5rem 0;
 		input[type='radio'] {
 			appearance: none;
-			background-color: var(--accented);
+			background-color: var(--alt);
 			outline: var(--accent) 3px solid;
 			border-radius: 50%;
 			padding: 0.5rem;
