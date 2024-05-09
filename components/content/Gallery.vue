@@ -3,14 +3,14 @@ const currentSlide = ref(1);
 
 const moveToPreviousSlide = () => {
 	if (currentSlide.value == 1) {
-		currentSlide.value = 29;
+		currentSlide.value = 34;
 		return;
 	}
 	currentSlide.value--;
 };
 
 const moveToNextSlide = () => {
-	if (currentSlide.value == 29) {
+	if (currentSlide.value == 34) {
 		currentSlide.value = 1;
 		return;
 	}
